@@ -40,11 +40,11 @@ window.onload = function()
 // Game board creation; one line to display code images, 8 blank attempts, 1 accept button and 8 selection pegs
 function createGameBoard(){
     
-    //add code images (dummy code)
+    //add default hole images
     for (var i = 1; i <= CODE_LENGTH; i++){
         var newImg = document.createElement("img");
         $(newImg).attr("id", "code" + i);
-        //add a dummy image
+        //add default hole images
         $(newImg).attr("src", "./images/hole.png");
         $("#coderow").append(newImg);
     }
